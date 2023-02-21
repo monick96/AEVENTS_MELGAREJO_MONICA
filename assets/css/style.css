@@ -1,0 +1,114 @@
+body{
+    height: 100vh;
+    background-color: rgba(23, 23, 23, 0.872);
+    color: aliceblue;
+}
+/* header style */
+header{
+    height: 10vh;
+}
+/* header .row:first-child{
+    height: 40%;
+}
+header .row:last-child{
+    height: 60%;
+} */
+nav{
+    
+    background-color: rgba(0, 0, 0, 0.611);
+}
+.navbar-nav a{
+    margin: 0rem 0.4rem;
+    font-size: 0.8rem;
+}
+.navbar-brand img{
+    width: 6rem;
+}
+.title{
+    background-color: rgba(20, 20, 20, 0.674);
+    /* color: aliceblue; */
+    /* margin: 0rem 0.05rem; */
+}
+.title h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* header media */
+@media only screen and (max-width: 580px){
+    header .navbar>.container-fluid{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}
+
+/* main style */
+main {
+    margin-top: 4rem;
+    height:80vh;
+}
+main .category label{
+    font-size: 0.6rem;
+    margin-right: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* .category  input[type="checkbox"] {
+    /* flex-basis: 1rem;
+    margin: 1rem; 
+    width: 50%;
+} */
+
+.category form input[type="text"]{
+    height:60%;
+    width: 60%;
+    
+}
+/* .cards{
+    margin-top: 2rem;
+} */
+.card {
+    width: 20%;
+    height: 50%;
+    /* font-size: 0.02rem; */
+}
+.card img{
+    height: 50%;
+    object-fit: cover;
+}
+/* .card-body{
+    font-size: 0.5rem;
+} */
+.card-body h5{
+    font-size: 0.9rem;
+}
+.card-body p{
+    font-size: 0.6rem;
+
+}
+/* main medias */
+@media only screen and (max-width:583px){
+    main .category label {
+        margin-right: 0.4rem;
+    }
+    
+}
+
+/* footer style */
+footer{
+    height: 10vh;
+    background-color: rgba(10, 10, 10, 0.611);
+    border-top: 1px solid rgba(255, 255, 255, 0.46);
+    margin-top: 5.5rem;
+    
+    /* color:rgba(240, 248, 255, 0.914); */
+
+}
+/* footer media */
+@media  only screen and (min-width:768px){
+    div.social-media{
+        margin: 1rem !important;
+    }
+}
