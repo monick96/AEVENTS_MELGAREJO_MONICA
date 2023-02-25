@@ -44,33 +44,6 @@ nav{
     text-align: center;
     /* font-size: 1.5rem; */
 }
-/* media nav */
-@media only screen and (max-width:576px){
-    .navbar-nav a{
-        margin: 0.4rem;
-        /* padding: 0.5rem; */
-        font-size:0.9rem;
-        
-    }
-    /* .navbar-nav{
-        flex-direction:row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: space-evenly;
-    } */
-    .navbar-brand img{
-        width: 6rem;
-    }
-} 
-/* header media */
-@media only screen and (max-width: 576px){
-    header .navbar>.container-fluid{
-        flex-direction: column;
-    }
-    h1{
-        font-size: 1.3rem;
-    }
-}
 
 /* main style */
 main {
@@ -99,7 +72,7 @@ main .category label{
 
 .category form input[type="text"]{
     height:60%;
-    width: 60%;
+    width: 80%;
     /* margin-top: 1rem; */
     
 }
@@ -109,9 +82,7 @@ main form button{
     width: 15%;
     /* text-align: center; */
 }
-/* .cards{
-    margin-top: 2rem;
-} */
+
 .card-small .card {
     width: 20%;
     height: 60%;
@@ -126,6 +97,7 @@ main form button{
     box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
 
 }
+
 .card-small .card img{
     height: 50%;
     object-fit: cover;
@@ -156,11 +128,198 @@ main form button{
 .card-small .card-body p>span{
     font-weight: bold;
 }
+
+        /* contact main style */
+main div.contact{
+    padding: 5rem;
+    /* height: 100%; */
+}
+/* main details style */
+main div.info{
+    width: 40%;
+}
+main .info .card-info{
+    height: 400px;
+    width:700px;
+    color: rgb(230, 218, 218);
+    background-color: rgba(51, 51, 51, 0.486);
+    border: 1px solid rgba(245, 245, 245, 0.582);
+    -webkit-box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
+    -moz-box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
+    box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
+}
+
+.card-detail .card-body h5{
+    font-size: 1.5rem;
+}
+.card-detail .card-body p{
+    font-size: 1rem;
+}
+.card-detail .card-body{
+    height: 100%;
+}
+.card-detail{
+    height: 100%;
+}
+
+.card-detail img{
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+}
+/* main contact style */
+main.contact .form-group .form-control{
+    border: 1px solid rgba(245, 245, 245, 0.484);
+    -webkit-box-shadow: -17px 7px 26px -16px rgba(230,221,230,0.67);
+    -moz-box-shadow: -17px 7px 26px -16px rgba(230,221,230,0.67);
+    box-shadow: -17px 7px 26px -16px rgba(230,221,230,0.67);
+    background-color: #1c1a1a23;
+    color: #ccc;
+    
+
+}
+/* 
+main stats style */
+main.stats table caption{
+    /* font-weight : bold; */
+    text-align: center;
+    background-color: rgba(107, 111, 114, 0.37);
+    color: #fff;
+}
+main.stats table thead th{
+    font-size: 1.55rem;
+    text-align: center;
+
+}
+main.stats table tbody td{
+    font-size: 1.45rem;
+
+}
+
+/* footer style */
+footer.index{
+    margin-top: ;
+}
+footer{
+    /* height: 10vh; */
+    background-color: rgba(10, 10, 10, 0.939);
+    border-top: 1px solid rgba(255, 255, 255, 0.46);
+    /* margin-top: 5rem; */
+}
+footer> .container{
+    height: 100%;
+}
+footer span{
+    font-size: 1.5rem;
+}
+    /* footer contact style */
+footer.contact-footer{
+    margin-top:2rem;
+}
+
+ /* footer details style */
+footer.details-footer{
+    margin-top:14rem;
+}
+
+/* medias all pages */
 /* main medias */
-@media only screen and (max-width: 579px){
-    .category{
-        height: 20%;
+@media only screen and (min-width: 768px){
+    .card-small .card .card-body{
+        height:50%;
     }
+    
+}
+/* nav media */
+@media only screen and (max-width: 768px){
+    header .navbar>.container-fluid{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:767.9px){
+    select#category-select{
+        margin: 1.5rem 0rem 0.5rem;
+        width: 50%;
+        height: 2.2rem;
+        font-size: 1.3rem;
+        color: aliceblue;
+        text-align: center;
+    }
+    select#category-select option {
+        font-size: 1.3rem;
+    }
+    
+    .category form input[type="text"]{
+        height:80%;
+        width: 80%; 
+        font-size: 1.3rem;
+        color: aliceblue; 
+    }
+    main form button{
+        height: 2rem;
+        color: rgb(243, 243, 243);
+    }
+    .category form button svg{
+        width: 80%;
+        font-size: 1.5rem;
+        margin-bottom: 1.3rem;
+
+    }
+    /* cards */
+    main div.card-small{
+        height: 100%;
+    } 
+
+    .card-small .card {
+        width: 40%;
+        height: 100%;
+        margin: 1.5rem 1rem;
+        padding-top: 1rem;
+        background-color: rgba(51, 51, 51, 0.486);
+        border: 1px solid rgba(245, 245, 245, 0.582);
+        -webkit-box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
+        -moz-box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
+        box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
+    
+    }
+
+    div.cards .card-body h5{
+        font-size: 1.3rem;
+        
+    }
+    div.cards .card-body p{
+        font-size: 1rem;
+    
+    }
+    div.cards .card-body .button {
+        display: inline-block;
+        align-items: center;
+        padding: 0rem 0.2rem;
+    }
+    div.cards .card img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+/* footer media */
+@media  only screen and (min-width:767.9px){
+    div.social-media{
+        margin: 1rem !important;
+    }
+}
+/* footer media */
+@media  only screen and (max-width:767.9px){
+    footer.cards-footer{
+        /* padding-top: 20rem; */
+        margin-top: 30rem;
+        }
+}
+@media only screen and (max-width: 579px){
+    /* .category{
+        height: 20%;
+    } */
     
     main .category label {
         margin-right: 0.4rem;
@@ -232,99 +391,7 @@ main form button{
         object-fit: cover;
     }
 
-} 
-
-
-        /* contact main style */
-main div.contact{
-    padding: 5rem;
-    /* height: 100%; */
 }
-/* main details style */
-main div.info{
-    width: 40%;
-}
-main .info .card-info{
-    height: 400px;
-    width:700px;
-    color: rgb(230, 218, 218);
-    background-color: rgba(51, 51, 51, 0.486);
-    border: 1px solid rgba(245, 245, 245, 0.582);
-    -webkit-box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
-    -moz-box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
-    box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
-}
-
-.card-detail .card-body h5{
-    font-size: 1.5rem;
-}
-.card-detail .card-body p{
-    font-size: 1rem;
-}
-.card-detail .card-body{
-    height: 100%;
-}
-.card-detail{
-    height: 100%;
-}
-
-.card-detail img{
-    width: 100%;
-    height: 390px;
-    object-fit: cover;
-}
-/* main contact style */
-main.contact .form-group .form-control{
-    border: 1px solid rgba(245, 245, 245, 0.484);
-    -webkit-box-shadow: -17px 7px 26px -16px rgba(230,221,230,0.67);
-    -moz-box-shadow: -17px 7px 26px -16px rgba(230,221,230,0.67);
-    box-shadow: -17px 7px 26px -16px rgba(230,221,230,0.67);
-    background-color: #1c1a1a23;
-    color: #ccc;
-    
-
-}
-/* 
-main stats style */
-main.stats table caption{
-    /* font-weight : bold; */
-    text-align: center;
-    background-color: rgba(107, 111, 114, 0.37);
-    color: #fff;
-}
-main.stats table thead th{
-    font-size: 1.55rem;
-    text-align: center;
-
-}
-main.stats table tbody td{
-    font-size: 1.45rem;
-
-}
-
-/* footer style */
-footer{
-    /* height: 10vh; */
-    background-color: rgba(10, 10, 10, 0.939);
-    border-top: 1px solid rgba(255, 255, 255, 0.46);
-    /* margin-top: 5rem; */
-}
-footer> .container{
-    height: 100%;
-}
-footer span{
-    font-size: 1.5rem;
-}
-    /* footer contact style */
-footer.contact-footer{
-    margin-top:2rem;
-}
-
- /* footer details style */
-footer.details-footer{
-    margin-top:14rem;
-}
-
 /* footer media */
 @media  only screen and (max-width:579px){
     footer.cards-footer{
@@ -332,10 +399,28 @@ footer.details-footer{
     margin-top: 75rem;
     }
 }
+/* media nav */
+@media only screen and (max-width:576px){
+    .navbar-nav a{
+        margin: 0.4rem;
+        /* padding: 0.5rem; */
+        font-size:0.9rem;
+        
+    }
 
-@media  only screen and (min-width:768px){
-    div.social-media{
-        margin: 1rem !important;
+    .navbar-brand img{
+        width: 6rem;
+    }
+} 
+
+/* header media */
+@media only screen and (max-width: 576px){
+    header .navbar>.container-fluid{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 1.3rem;
     }
 }
+
 
