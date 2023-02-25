@@ -5,7 +5,6 @@ body{
     background-image:url('https://img.freepik.com/vector-gratis/borde-dorado-luna-sol-sobre-fondo-negro_53876-143411.jpg?w=900&t=st=1677017182~exp=1677017782~hmac=9e3ad92e0c8bcd9ad7392a790cf40ce3b2deb53f25e362068d3feb95aac432d1');
     background-size: cover;
     filter: brightnes(0.6);
-    /* -webkit-filter: brightnes(0.6); */
     opacity: 0.9;
     font-size: 2rem;
     font-family: sans-serif;
@@ -29,6 +28,10 @@ nav{
     margin: 0rem 0.8rem 0rem 0rem;
     font-size: 1.6rem;
 }
+/* .navbar-nav {
+    margin: 0rem 0.8rem 0rem 0rem;
+    font-size: 1.6rem;
+}  */
 .navbar-brand img{
     width: 10rem;
 }
@@ -41,20 +44,38 @@ nav{
     text-align: center;
     /* font-size: 1.5rem; */
 }
+/* media nav */
+@media only screen and (max-width:576px){
+    .navbar-nav a{
+        margin: 0.4rem;
+        /* padding: 0.5rem; */
+        font-size:0.9rem;
+        
+    }
+    /* .navbar-nav{
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+    } */
+    .navbar-brand img{
+        width: 6rem;
+    }
+} 
 /* header media */
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 576px){
     header .navbar>.container-fluid{
         flex-direction: column;
     }
     h1{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
 /* main style */
 main {
     margin-top: 6rem;
-    /* height:80vh; */
+    height:80vh;
     
 }
 .container-fluid{
@@ -136,12 +157,84 @@ main form button{
     font-weight: bold;
 }
 /* main medias */
-@media only screen and (max-width:583px){
+@media only screen and (max-width: 579px){
+    .category{
+        height: 20%;
+    }
+    
     main .category label {
         margin-right: 0.4rem;
     }
+    select#category-select{
+        margin: 0rem 0rem 0.5rem;
+        width: 65%;
+        font-size: 1.2rem;
+        color: aliceblue;
+        text-align: center;
+    }
+    select#category-select option {
+        font-size: 1rem;
+    }
     
-}
+    .category form input[type="text"]{
+        height:80%;
+        width: 60%; 
+        font-size: 1.2rem;
+        
+        color: aliceblue;
+        
+    }
+    main form button{
+        height: 2rem;
+        color: rgb(243, 243, 243);
+    }
+    .category form button svg{
+        width: 80%;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+    }
+    main div.cards{
+        height: 80%;
+    }
+    main div.card-small{
+        height: 100%;
+    } 
+
+    .card-small .card {
+        width: 60%;
+        height: 90%;
+        margin: 1.5rem 0rem;
+        padding-top: 1rem;
+        background-color: rgba(51, 51, 51, 0.486);
+        border: 1px solid rgba(245, 245, 245, 0.582);
+        -webkit-box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
+        -moz-box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
+        box-shadow: -9px 8px 18px 1px rgba(115,125,125,0.46);
+    
+    }
+
+    div.cards .card-body h5{
+        font-size: 1.3rem;
+        
+    }
+    div.cards .card-body p{
+        font-size: 1rem;
+    
+    }
+    div.cards .card-body .button {
+        display: inline-block;
+        align-items: center;
+        padding: 0rem 0.2rem;
+    }
+    div.cards .card img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+} 
+
+
         /* contact main style */
 main div.contact{
     padding: 5rem;
@@ -233,6 +326,13 @@ footer.details-footer{
 }
 
 /* footer media */
+@media  only screen and (max-width:579px){
+    footer.cards-footer{
+    /* padding-top: 20rem; */
+    margin-top: 75rem;
+    }
+}
+
 @media  only screen and (min-width:768px){
     div.social-media{
         margin: 1rem !important;
