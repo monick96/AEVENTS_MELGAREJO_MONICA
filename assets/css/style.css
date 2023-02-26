@@ -129,11 +129,7 @@ main form button{
     font-weight: bold;
 }
 
-        /* contact main style */
-main div.contact{
-    padding: 5rem;
-    /* height: 100%; */
-}
+ 
 /* main details style */
 main div.info{
     width: 40%;
@@ -175,8 +171,23 @@ main.contact .form-group .form-control{
     box-shadow: -17px 7px 26px -16px rgba(230,221,230,0.67);
     background-color: #1c1a1a23;
     color: #ccc;
-    
+}
 
+main div.contact button[type="submit"]{
+    /* padding: 1rem 2.5rem;
+    text-align: center; */
+    width: 100%;
+
+}
+
+main.contact{
+    padding: 2rem;
+    /* height: 100%; */
+}
+main div.contact {
+    width: 60%;
+    height: 100%;
+    padding: 1rem;
 }
 /* 
 main stats style */
@@ -422,5 +433,47 @@ footer.details-footer{
         font-size: 1.3rem;
     }
 }
+
+/* medias contact main*/
+@media only screen and (min-width: 767.9px) and (max-width:1024px){
+    main div.contact {
+        width: 60%;
+        /* height: 85%; */
+        /* padding: 2rem; */
+    }
+    main.contact {
+        margin-top: 6rem;
+    }
+    main div.contact label{
+        font-size: 1.3rem;
+    }
+    main div.contact input{
+        font-size: 1.2rem;
+    }
+
+    
+
+}
+@media only screen and (max-width: 576px){
+    main div.contact {
+        width: 80%;
+        /* height: 100%; */
+        padding: 0;
+    }
+    main div.contact label{
+        font-size: 1.1rem;
+    }
+    main div.contact input{
+        font-size: 1rem;
+    }
+    main div.contact button[type="submit"]{
+        /* padding: 1rem 2.5rem;
+        text-align: center; */
+        width: 100%;
+
+    }
+
+}
+
 
 

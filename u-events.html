@@ -19,19 +19,19 @@
 
 <body>
     <header>
-        <div class="row ">
-            <div class="col ">
+        <div class="row">
+            <div class="col">
                 <nav class="navbar navbar-dark ">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="./index.html">
                             <img src="./assets/img/Logo Amazing Events.png" alt="Logo Amazing Events">
                         </a>
-                        <ul class="navbar-nav d-flex flex-row">
+                        <ul class="navbar-nav flex-row">
                             <li class="nav-item">
-                                <a class="nav-link"  href="./index.html">Home</a>
+                                <a class="nav-link "  href="./index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Upcoming Events</a>
+                                <a class="nav-link active" aria-current="page" href="./u-events.html">Upcoming Events</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./p-events.html">Past Events</a>
@@ -56,19 +56,30 @@
 
     </header>
     <main>
-        <div class="container-fluid">
+        <div class="container-fluid index">
             <div class="row category justify-content-center align-items-center">
-                <div class="col-8 d-flex justify-content-around align-items-center">
+                <div class=" d-none d-md-flex flex-wrap col-md-8 d-flex justify-content-around align-items-center">
                     <label for="category1"><input type="checkbox" id="category1" name="category1">  category1</label>
                     <label for="category2"><input type="checkbox" id="category2" name="category2">  category2</label>
                     <label for="category3"><input type="checkbox" id="category3" name="category3">  category3</label>
                     <label for="category4"><input type="checkbox" id="category4" name="category4">  category4</label>
                     <label for="category5"><input type="checkbox" id="category5" name="category5">  category5</label>
                 </div>
-                <div class="col-4 d-flex align-items-center justify-content-end">
-                    <form class="d-flex align-items-center justify-content-end">
-                        <input type="text" name="search">
-                        <button type="submit">
+                <div class="col d-flex justify-content-center d-md-none">
+                    <select id="category-select" class="bg-dark ">
+                        <option value="">Select a category</option>
+                        <option value="category1">category1</option>
+                        <option value="category2">category2</option>
+                        <option value="category3">category3</option>
+                        <option value="category4">category4</option>
+                        <option value="category5">category5</option>
+                    </select>
+                </div>
+                
+                <div class="d-flex col-md-4  justify-content-center align-items-center justify-content-md-end">
+                    <form class="d-flex justify-content-center align-items-center justify-content-md-end">
+                        <input type="text" name="search" class="bg-dark">
+                        <button type="submit" class="bg-dark">
                             <svg xmlns="http://www.w3.org/2000/svg"  width="15" height="15" fill="currentColor" class="bi bi-search" viewBox="0 0 20 20">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                             </svg>
@@ -76,12 +87,11 @@
                     </form> 
                 </div>
             </div>
-            <div class="row cards ">
-                <div class="col d-flex justify-content-between align-items-center card-small">
+            <div class="row cards justify-content-center align-items-center">
+                <div class="col d-flex flex-wrap justify-content-center align-items-center flex-md-nowrap justify-content-md-between card-small">
                     <!-- CARD 1 -->
-                    <div class="card">
-                        <img src="./assets/img/Cinema.jpg"
-                            class="card-img-top" alt="cine-img">
+                    <div class="card ">
+                        <img src="./assets/img/Cinema.jpg" class="card-img-top" alt="cine-img">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick</p>
@@ -123,15 +133,13 @@
                         </div>
                     </div>
                 </div>
-            </div>             
+            </div>
         </div>
-
-
     </main>
-    <footer>
+    <footer class="cards-footer index">
         <div class="container">
-            <div class="d-flex flex-wrap justify-content-between align-items-center social-media">
-                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <div class="row d-flex flex-md-wrap justify-content-between align-items-center social-media">
+                <ul class="nav col-12 d-flex justify-content-center col-md-4 justify-content-md-end list-unstyled ">
                     <li class="ms-3">
                         <a class="text-muted" href="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook"
@@ -156,7 +164,7 @@
                         </a>
                     </li>
                 </ul>
-                <div class="col-md-4 d-flex align-items-center">
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-start align-items-center">
                     <span class="mb-md-0 text-muted">© 2023 FE12-TT</span>
                 </div>
             </div>
