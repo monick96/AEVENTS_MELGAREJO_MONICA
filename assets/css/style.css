@@ -8,6 +8,8 @@ body{
     opacity: 0.9;
     font-size: 2rem;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 /* header style */
 header{
@@ -208,9 +210,6 @@ main.stats table tbody td{
 }
 
 /* footer style */
-footer.index{
-    margin-top: ;
-}
 footer{
     /* height: 10vh; */
     background-color: rgba(10, 10, 10, 0.939);
@@ -234,12 +233,59 @@ footer.details-footer{
 }
 
 /* medias all pages */
+/*stats media  */
+@media only screen and (min-width:577px){
+    /* main stats media  */
+    main.stats{
+        margin-top: 10rem;
+    }
+    main.stats table caption{
+        font-size:1.5rem;
+    }
+    main.stats table thead th{
+        font-size: 1.3rem;
+    }
+    main.stats table tbody td{
+        font-size: 1.2rem;
+    }
+    /* footer stats media  */
+    footer.foot-stats{
+        margin-top: 35rem;
+    }
+}
 /* main medias */
 @media only screen and (min-width: 768px){
     .card-small .card .card-body{
         height:50%;
     }
     
+}
+/* footer media */
+@media  only screen and (min-width:767.9px){
+    div.social-media{
+        margin: 1rem !important;
+    }
+}
+/*  media main contact */
+
+@media only screen and (min-width: 767.9px) and (max-width:1024px){
+    main div.contact {
+        width: 60%;
+        /* height: 85%; */
+        /* padding: 2rem; */
+    }
+    main.contact {
+        margin-top: 6rem;
+    }
+    main div.contact label{
+        font-size: 1.3rem;
+    }
+    main div.contact input{
+        font-size: 1.2rem;
+    }
+
+    
+
 }
 /* nav media */
 @media only screen and (max-width: 768px){
@@ -248,6 +294,7 @@ footer.details-footer{
         align-items: center;
     }
 }
+/* main cards index, up and past events media */
 @media only screen and (max-width:767.9px){
     select#category-select{
         margin: 1.5rem 0rem 0.5rem;
@@ -314,12 +361,7 @@ footer.details-footer{
     }
 
 }
-/* footer media */
-@media  only screen and (min-width:767.9px){
-    div.social-media{
-        margin: 1rem !important;
-    }
-}
+
 /* footer media */
 @media  only screen and (max-width:767.9px){
     footer.cards-footer{
@@ -435,25 +477,7 @@ footer.details-footer{
 }
 
 /* medias contact main*/
-@media only screen and (min-width: 767.9px) and (max-width:1024px){
-    main div.contact {
-        width: 60%;
-        /* height: 85%; */
-        /* padding: 2rem; */
-    }
-    main.contact {
-        margin-top: 6rem;
-    }
-    main div.contact label{
-        font-size: 1.3rem;
-    }
-    main div.contact input{
-        font-size: 1.2rem;
-    }
 
-    
-
-}
 @media only screen and (max-width: 576px){
     main div.contact {
         width: 80%;
@@ -473,6 +497,25 @@ footer.details-footer{
 
     }
 
+}
+/*stats media  */
+@media only screen and (max-width:576px){
+    /* main stats media  */
+    main.stats table caption{
+        font-size:1.25rem;
+    }
+    main.stats table thead th{
+        font-size: 1.1rem;
+        text-align: center;
+    
+    }
+    main.stats table tbody td{
+        font-size: 1rem;
+    }
+    /* footer stats media  */
+    footer.foot-stats{
+        margin-top: 30rem;
+    }
 }
 
 
