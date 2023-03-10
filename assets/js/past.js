@@ -1,9 +1,8 @@
 let all_events = data.events;
-let current_day= new Date(data.currentDate);
+let current_day= data.currentDate;
 let past_events= filter_events_past(current_day,all_events);
-let past_cards = do_cards(past_events);
 let container_past_cards = document.getElementById("col-card-past");
-container_past_cards.innerHTML = past_cards;
+container_past_cards.innerHTML = do_cards(past_events);
 // console.log(all_events);
 // console.log(current_day);
 // console.log(past_events);

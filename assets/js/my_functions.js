@@ -1,44 +1,29 @@
 //function that generate cards
-function do_cards(array){
+let do_cards = (array) =>{
     let structure_card = "";
-    for(let i=0;i<array.length;i++){
+    array.forEach((el) => {
         structure_card += `
         <div class="card ">
-            <img src="${array[i].image}" class="card-img-top" alt="${array[i].name}">
+            <img src="${el.image}" class="card-img-top" alt="${el.name}">
             <div class="card-body">
-                <h5 class="card-title">${array[i].name}</h5>
-                <p class="card-text">${array[i].description}</p>
-                <p><span>Price: $${array[i].price}</span></p>
-                <p class="button" role="button">More...</p>
+                <h5 class="card-title">${el.name}</h5>
+                <p class="card-text">${el.description}</p>
+                <p><span>Price: ${el.price}</span></p>
+                <p><span>Date: ${el.date}</span></p>
+                <p class="button" role="button"><a href="#">More...</a></p>
             </div>
         </div>
         `;
-    }
+    });
     return structure_card;
 }
 
 // past events filter
-function filter_events_past(actual_date,array){
-    
-    events = [];
-    for (i =0; i<array.length; i++){
-        let date_event = new Date(array[i].date)
-        if(date_event < actual_date){
-            events.push(array[i])
-        }
-    }
-    return events;
+let filter_events_past = (actual_date,array)=>{
+    return array.filter(el=> actual_date>el.date);
 }
 
 //future events filter
-function filter_events_future(actual_date,array){
-    
-    events = [];
-    for (i =0; i<array.length; i++){
-        let date_event = new Date(array[i].date)
-        if(date_event > actual_date){
-            events.push(array[i])
-        }
-    }
-    return events;
+let filter_future_events = (actual_date,array)=>{
+    return array.filter(el=> actual_date<el.date);
 }
