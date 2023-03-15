@@ -65,6 +65,13 @@ main {
 .cards{
     height:80%
 }
+.cards p span, #cards_details p span{
+    font-weight: bold;
+}
+.cards a{
+    text-decoration: none;
+    color: #333;
+}
 main .category label{
     font-size: 1.3rem;  
     display: flex;
@@ -220,7 +227,7 @@ main.stats table tbody td{
 
 /* footer style */
 footer.index {
-    margin-top: 150rem;
+    margin-top: 170rem;
 }
 footer{
     /* height: 10vh; */
@@ -244,7 +251,7 @@ footer.contact-footer{
 
  /* footer details style */
 footer.details-footer{
-    margin-top:14rem;
+    margin-top:15rem;
 }
 
 /* medias all pages */
@@ -354,7 +361,7 @@ footer.details-footer{
     }
     /* footer detail */
     footer.foot-details{
-        margin-top: 0rem;
+        margin-top: 12rem;
     }
 }
 /* nav media */
@@ -437,6 +444,10 @@ footer.details-footer{
     footer.cards-footer{
         /* padding-top: 20rem; */
         margin-top: 198rem;
+    }
+    footer.index{
+        /* padding-top: 20rem; */
+        margin-top: 245rem;
     }
     footer.up{
         margin-top: 110rem;
@@ -530,6 +541,10 @@ footer.details-footer{
     footer.cards-footer{
     /* padding-top: 20rem; */
     margin-top: 372rem;
+    }
+    footer.index{
+        /* padding-top: 20rem; */
+        margin-top: 460rem;
     }
     footer.up{
         margin-top: 190rem;
