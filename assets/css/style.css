@@ -85,6 +85,7 @@ main .category label{
 .category form input[type="text"]{
     height:60%;
     width: 80%;
+    color: aliceblue;
     /* margin-top: 1rem; */
     
 }
