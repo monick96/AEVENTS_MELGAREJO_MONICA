@@ -15,7 +15,7 @@ let do_cards2 = (array,container) =>{
                 <p class="card-text">${el.description}</p>
                 <p><span>Price:</span> $${el.price}</p>
                 <p><span>Date:</span> ${el.date}</p>
-                <p class="button" role="button"><a href="./details.html?id=${el.id}">More...</a></p>
+                <p class="button" role="button"><a href="./details.html?id=${el._id}">More...</a></p>
             </div>
         </div>
         `;
