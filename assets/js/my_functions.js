@@ -3,7 +3,7 @@
 let do_cards2 = (array, container) => {
     if (array.length == 0) {
         //console.log(container_card);
-        return container.innerHTML = `<h5 class="col d-flex flex-column justify-content-center align-items-center" id="message">It was not found "${input.value}" between events!</h5>`;
+        return container.innerHTML = `<h3 class="col d-flex flex-column justify-content-center align-items-center" id="message">It was not found "${input.value}" between events!</h3>`;
     } else {
         let structure_card = "";
         array.forEach((el) => {
