@@ -60,7 +60,17 @@ main {
     height: 20%;
 }
 .cards{
+    margin-top: 1rem;
+}
+.cards{
     height:80%
+}
+.cards p span, #cards_details p span{
+    font-weight: bold;
+}
+.cards a{
+    text-decoration: none;
+    color: #333;
 }
 main .category label{
     font-size: 1.3rem;  
@@ -75,6 +85,7 @@ main .category label{
 .category form input[type="text"]{
     height:60%;
     width: 80%;
+    color: aliceblue;
     /* margin-top: 1rem; */
     
 }
@@ -86,8 +97,9 @@ main form button{
 }
 
 .card-small .card {
-    width: 20%;
-    height: 60%;
+    width: 30%;
+    margin: 1rem;
+    /* height: 60%; */
     /* font-size: 0.02rem; */
     display: flex;
     justify-content: center;
@@ -118,8 +130,10 @@ main form button{
 
 }
 .card-small .card-body .button {
-    display: inline-block;
-    align-items: center;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
     padding: 0.5rem 0.5rem;
     /* width: 30%; */
     font-size: 1.1rem;
@@ -187,7 +201,7 @@ main div.contact button[type="submit"]{
 
 main.contact{
     padding: 2rem;
-    /* height: 100%; */
+    height: 100%;
 }
 main div.contact {
     width: 60%;
@@ -209,15 +223,22 @@ main.stats table thead th{
 }
 main.stats table tbody td{
     font-size: 1.45rem;
+    color: rgba(0, 255, 255, 0.638);
 
 }
 
 /* footer style */
+footer.index {
+    margin-top: 500rem;
+}
 footer{
     /* height: 10vh; */
     background-color: rgba(10, 10, 10, 0.939);
     border-top: 1px solid rgba(255, 255, 255, 0.46);
     /* margin-top: 5rem; */
+}
+footer.up{
+    margin-top: 80rem;
 }
 footer> .container{
     height: 100%;
@@ -232,7 +253,7 @@ footer.contact-footer{
 
  /* footer details style */
 footer.details-footer{
-    margin-top:14rem;
+    margin-top:15rem;
 }
 
 /* medias all pages */
@@ -304,6 +325,7 @@ footer.details-footer{
     }
     main.contact {
         margin-top: 6rem;
+        padding: 1rem;
     }
     main div.contact label{
         font-size: 1.3rem;
@@ -341,7 +363,7 @@ footer.details-footer{
     }
     /* footer detail */
     footer.foot-details{
-        margin-top: 0rem;
+        margin-top: 12rem;
     }
 }
 /* nav media */
@@ -388,7 +410,7 @@ footer.details-footer{
 
     .card-small .card {
         width: 40%;
-        height: 100%;
+        height: 140%;
         margin: 1.5rem 1rem;
         padding-top: 1rem;
         background-color: rgba(51, 51, 51, 0.486);
@@ -408,7 +430,7 @@ footer.details-footer{
     
     }
     div.cards .card-body .button {
-        display: inline-block;
+        /* display: inline-block; */
         align-items: center;
         padding: 0rem 0.2rem;
     }
@@ -423,8 +445,15 @@ footer.details-footer{
 @media  only screen and (max-width:767.9px){
     footer.cards-footer{
         /* padding-top: 20rem; */
-        margin-top: 30rem;
-        }
+        margin-top: 198rem;
+    }
+    footer.index{
+        /* padding-top: 20rem; */
+        margin-top: 245rem;
+    }
+    footer.up{
+        margin-top: 110rem;
+    }
 }
 @media only screen and (max-width: 579px){
     /* .category{
@@ -465,14 +494,15 @@ footer.details-footer{
     }
     main div.cards{
         height: 80%;
+        /* margin-top: 2.5rem; */
     }
     main div.card-small{
         height: 100%;
     } 
 
     .card-small .card {
-        width: 60%;
-        height: 90%;
+        width: 86%;
+        height: 126%;
         margin: 1.5rem 0rem;
         padding-top: 1rem;
         background-color: rgba(51, 51, 51, 0.486);
@@ -492,21 +522,34 @@ footer.details-footer{
     
     }
     div.cards .card-body .button {
-        display: inline-block;
+        display: flex;
         align-items: center;
+        justify-content: center;
         padding: 0rem 0.2rem;
+        width: 50%;
     }
     div.cards .card img{
         width: 100%;
         object-fit: cover;
     }
 
+    /* .card-small .card-body {
+        height: 50%;
+    } */
+
 }
 /* footer media */
 @media  only screen and (max-width:579px){
     footer.cards-footer{
     /* padding-top: 20rem; */
-    margin-top: 85rem;
+    margin-top: 372rem;
+    }
+    footer.index{
+        /* padding-top: 20rem; */
+        margin-top: 460rem;
+    }
+    footer.up{
+        margin-top: 190rem;
     }
 }
 /* media nav */
@@ -525,6 +568,9 @@ footer.details-footer{
 
 /* header media */
 @media only screen and (max-width: 576px){
+    header{
+        margin-bottom: 8rem;
+    }
     header .navbar>.container-fluid{
         flex-direction: column;
     }
@@ -537,7 +583,7 @@ footer.details-footer{
 
 @media only screen and (max-width: 576px){
     main div.contact {
-        width: 80%;
+        width: 90%;
         /* height: 100%; */
         padding: 0;
     }
@@ -550,7 +596,7 @@ footer.details-footer{
     main div.contact button[type="submit"]{
         /* padding: 1rem 2.5rem;
         text-align: center; */
-        width: 100%;
+        width: 130%;
 
     }
 
