@@ -223,6 +223,7 @@ main.stats table thead th{
 }
 main.stats table tbody td{
     font-size: 1.45rem;
+    color: rgba(0, 255, 255, 0.638);
 
 }
 
